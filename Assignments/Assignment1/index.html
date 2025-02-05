@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Personal Budget Tracker</title>
+
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>Personal Budget Tracker</h1>
+            <nav>
+                <a href="#Add-Income">Add Income/Expense</a> |
+                <a href="#Budget-summary">View Budget Summary</a>
+            </nav>
+        </header>
+        <section>
+            <h1>Welcome to the Budget Tracker</h1>
+            <p>This tracker helps your monthly income and expenses. You can add new entries and view a details summary
+                of your budget.</p>
+        </section>
+        <section id="Add-Income">
+            <h1>Add New Income or Expense</h1>
+            <form>
+                <label>Amount:</label>
+                <input type="number" required /><br><br>
+                <label>Description:</label>
+                <input type="text" required /><br><br>
+                <label>Category:</label>
+                <select id="category">
+                    <option value="food">Food</option>
+                    <option value="transportation">Transactions</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <label>Date:</label>
+                <input type="date"><br><br>
+                <label>Type:</label>
+                <input type="radio" value="income">Income
+                <input type="radio" value="expense">Expense<br><br>
+                <button type="submit">Add Entry</button>
+            </form>
+        </section>
+        <section id="Budget-summary">
+            <h1>Budget Summary</h1>
+            <table border="2px">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Category</th>
+                        <th colspan="2">Transaction Details</th>
+                        <th rowspan="2">Status</th>
+                        <th rowspan="2">Action</th>
+                    </tr>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Food</td>
+                        <td>$200</td>
+                        <td>Groceries for the week</td>
+                        <td>Completed</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Transportation</td>
+                        <td>$100</td>
+                        <td>Monthly bus pass</td>
+                        <td>Completed</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td>$3000</td>
+                        <td>Monthly salary payment</td>
+                        <td>Completed</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Savings</td>
+                        <td>$500</td>
+                        <td>Emergency fund deposit</td>
+                        <td>pending</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Utilities </td>
+                        <td>$150</td>
+                        <td>Electricity bill</td>
+                        <td>Completed</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>$50</td>
+                        <td>Water bill</td>
+                        <td>pending</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Housing </td>
+                        <td>$1200</td>
+                        <td>Monthly rent</td>
+                        <td>Completed</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>$300</td>
+                        <td>Maintenance fee</td>
+                        <td>pending</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <p>Personal Budget Tracker - Version 1.0 | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </footer>
+    </center>
+
+</body>
+
+</html>
