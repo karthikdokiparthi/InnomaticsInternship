@@ -268,3 +268,99 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar-container {
+        flex-direction: row;
+    }
+
+    #navbar-links {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    #navbar-links li {
+        margin: 10px 10px;
+    }
+
+    #header {
+        height: 50vh;
+    }
+
+    #header-container h1 {
+        font-size: 40px;
+    }
+
+    #header-container p {
+        font-size: 20px;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #about-container h2 {
+        font-size: 25px;
+    }
+
+    #about-text p {
+        max-width: 550px;
+        font-size: 15px;
+    }
+
+    #about-container img {
+        max-width: 25%;
+    }
+
+    #contact-us h1 {
+        font-size: 25px;
+    }
+
+    #input-field {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        font-size: 1.8rem;
+    }
+
+    #navbar-links li {
+        font-size: 15px;
+    }
+
+    #header {
+        height: 35vh;
+    }
+
+    #header-container h1 {
+        font-size: 30px;
+    }
+
+    #header-container p {
+        font-size: 18px;
+    }
+
+    #about-text p {
+        max-width: 325px;
+        font-size: 10px;
+    }
+
+    #button {
+        font-size: 18px;
+    }
+
+    #input-field {
+        width: 100%;
+    }
+
+    #input-field {
+        max-width: 325px;
+    }
+
+
+}
