@@ -10,7 +10,6 @@ body {
 
 nav {
     background: rgba(255, 255, 255, 0.95);
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -27,16 +26,16 @@ nav {
 }
 
 #logo {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #4A3428;
     animation: float 3s ease-in-out infinite;
-    font-size: 50px;
 }
 
 #navbar-links {
     display: flex;
     list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #navbar-links li {
@@ -220,4 +219,38 @@ nav {
 #about-container-text span {
     margin-right: 500px;
     font-weight: bold;
+}
+
+#contact-us {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#input-field {
+    display: inline-block;
+    width: 900px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#btn {
+    display: block;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 10px 10px;
+    background-color: #4A3428;
+    color: white;
+    border-radius: 15px;
 }
