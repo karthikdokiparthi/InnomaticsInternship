@@ -254,3 +254,12 @@ button {
     color: white;
     border-radius: 15px;
 }
+
+footer {
+    text-align: center;
+    margin: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
