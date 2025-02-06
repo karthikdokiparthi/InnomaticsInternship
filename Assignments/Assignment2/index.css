@@ -8,6 +8,7 @@ body {
 
 }
 
+/* Nav Section */
 nav {
     background: rgba(255, 255, 255, 0.95);
     width: 100%;
@@ -69,7 +70,7 @@ nav {
     width: 100%;
 }
 
-
+/* Header Section */
 #header {
     height: 100vh;
     background-image: url(https://www.tastingtable.com/img/gallery/26-coffee-hacks-you-need-to-know-for-a-better-cup/l-intro-1690195847.jpg);
@@ -112,7 +113,7 @@ nav {
     color: white;
 }
 
-
+/* Menu Section */
 #menu h2 {
     text-align: center;
     margin-top: 30px;
@@ -172,6 +173,7 @@ nav {
     color: #181818;
 }
 
+/* About Section */
 #about-container {
     max-width: 1200px;
     margin: 50px auto;
@@ -221,6 +223,7 @@ nav {
     font-weight: bold;
 }
 
+/* Contact Section */
 #contact-us {
     max-width: 1200px;
     margin: 50px auto;
@@ -255,11 +258,13 @@ button {
     border-radius: 15px;
 }
 
+/* Footer Section */
 footer {
     text-align: center;
     margin: 25px;
 }
 
+/*Smooth Scrolling*/
 html {
     scroll-behavior: smooth;
 }
