@@ -86,3 +86,124 @@ img {
     font-size: medium;
     margin-left: 50px;
 }
+
+#main-container {
+    max-width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+#data-container {
+    max-width: 45%;
+    margin-left: 75px;
+}
+
+#data-container h1 {
+    font-size: xx-large;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+#data-container h1 span {
+    display: block;
+}
+
+#data-container p {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#clr {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(224, 57, 57);
+}
+
+#data-container h3 {
+    color: rgb(224, 57, 57);
+    line-height: 2;
+}
+
+#data-container h4 {
+    color: rgb(224, 57, 57);
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+#data-container button {
+    padding: 12px 30px;
+    text-align: center;
+    border: none;
+    background-color: rgb(224, 57, 57);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#grid-section {
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#grid-section h2 {
+    color: rgb(1, 45, 125);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 35px;
+    background-color: #ffffff;
+    margin-top: 65px;
+}
+
+.box {
+    color: black;
+    padding: 30px 75px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 0.5px solid rgb(205, 205, 205);
+    position: relative;
+    margin: 10px;
+}
+
+.grid i {
+    font-size: 50px;
+}
+
+.grid p {
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(1, 45, 125);
+    font-size: 1rem;
+}
+
+.box::after {
+    content: "";
+    width: 50%;
+    height: 3.5px;
+    background-color: red;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width ease-in-out, opacity ease-in-out;
+    opacity: 0;
+}
+
+.box:hover::after {
+    width: 100%;
+    opacity: 1;
+}
