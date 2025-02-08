@@ -161,6 +161,95 @@
             </div>
         </div>
     </section>
+    <section>
+        <div id="choose">
+            <h2>Why People Choose Our Training</h2>
+            <div class="links-container">
+                <ul>
+                    <li><a href="">EXPERT TRAINERS</a></li>
+                    <li><a href="">CAPSTONE PROJECTS</a></li>
+                    <li><a href="">INHOUSE INTERNSHIP</a></li>
+                    <li><a href="">PLACEMENTS</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="experts">
+            <h2>Meet our experts</h2><a href=""><i class="fa-solid fa-phone"></i> 9951666670</a>
+
+        </div>
+    </section>
+    <section>
+        <div class="review-section">
+            <h2>A few reviews from our students</h2>
+            <div class="slider-container">
+                <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="slides">
+                    <div class="slide">
+                        <h2>Sindhuja</h2>
+                        <p>
+                            Innomatics is one of the best places to gain knowledge on data science and also get
+                            certified through Nasscom which can help in getting the right jobs from top companies.
+                            Tutors will teach you with real-time examples to understand the concepts in an easy way.
+                            Special thanks to Vaibav Sir who taught each concept very clearly.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="slide">
+                        <h2>Amarnath Choudary</h2>
+                        <p>
+                            HEY! I am Amar student of the innomatics research labs .. I love the innomatics research lab
+                            because the mentors and trainers help me a lot in any query in the course. If anyone looking
+                            for data science in the market, I can say innomatics is one of the best institutes.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="slide">
+                        <h2>Vamshi Raj</h2>
+                        <p>Innomatics Research Labs is the Best platform to transform our career, here I have done a
+                            Data analytics course, and was recently placed in a company.
+                            Here they provides Excellent quality education and practice or doubt Sessions. and conducts
+                            so many Hackathons to enhance our skills. I personally like the LMS facility which is
+                            lifetime. Here we can see all our class recordings throughout the course.
+                            Faculty and staff are so friendly. They will guide us until we get placed.
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="slide">
+                        <h2>Pramodha</h2>
+                        <p>I am incredibly grateful to my institute for the invaluable support they provided in my job
+                            search
+                            journey. The guidance and resources they offered were instrumental in helping me secure a
+                            job. I
+                            want to express my special thanks to our HR executive, Sai Kiran Rodda, whose assistance was
+                            pivotal. His dedication and expertise made the entire process seamless, enabling me to
+                            transition
+                            smoothly into my new role. I highly recommend this institute to anyone seeking not only
+                            quality
+                            education but also excellent career support. Thank you for making a significant difference
+                            in my
+                            life!</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector(".slides");
+        const totalSlides = document.querySelectorAll(".slide").length;
+
+        function changeSlide(direction) {
+            slideIndex += direction;
+
+            if (slideIndex >= totalSlides) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = totalSlides - 1;
+
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+    </script>
 </body>
 
 </html>
