@@ -446,6 +446,34 @@ a {
     color: white;
 }
 
+.details-container {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.details-img img {
+    width: 250px;
+    height: 250px;
+}
+
+.details-info {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.details-info p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
 .experts {
     margin-top: 20px;
     display: block;
