@@ -238,6 +238,7 @@ a {
     width: 320px;
     text-align: center;
     display: inline;
+    cursor: pointer;
 }
 
 .card-course img {
@@ -269,6 +270,7 @@ a {
     background-color: black;
     border: 2px solid white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .card-course button:hover {
@@ -534,6 +536,7 @@ a {
 
 .img-grid {
     margin: 5px;
+    cursor: pointer;
 }
 
 .img-grid img {
@@ -561,4 +564,50 @@ a {
 
 .back {
     left: 20px;
+}
+
+.blog-section {
+    display: block;
+    margin: 30px 0 50px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    gap: 3.8rem;
+}
+
+.blog-box {
+    border: 1px dashed black;
+    width: 320px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.blog-box .image {
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.blog-box h3 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.blog-box p {
+    margin-top: 20px;
+    font-weight: 10;
+    font-size: 0.9rem;
+    line-height: 20px;
 }
