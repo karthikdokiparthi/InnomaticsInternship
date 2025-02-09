@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/88139295?s=280&v=4" type="image/x-icon">
     <title>Innomatics Research Lab</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/acf205ba5f.js" crossorigin="anonymous"></script>
@@ -35,7 +36,43 @@
         </diV>
     </nav>
     <header>
-
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="image1.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides">
+                <img src="image2.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides">
+                <img src="image3.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides">
+                <img src="image4.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides">
+                <img src="image5.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides">
+                <img src="image6.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides">
+                <img src="image7.jpg">
+                <a class="nav-bar prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nav-bar next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
     </header>
     <section>
         <div id="main-container">
@@ -389,6 +426,29 @@
         </div>
     </section>
     <script>
+        //Header image slide section
+        let slidesIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            if (slidesIndex >= slides.length) { slidesIndex = 0; }
+            if (slidesIndex < 0) { slidesIndex = slides.length - 1; }
+
+            slides[slidesIndex].style.display = "block";
+        }
+
+        function plusSlides(n) {
+            slidesIndex += n;
+            showSlides();
+        }
+
+
         //review-section script
         let slideIndex = 0;
         const slides = document.querySelector(".slides");
