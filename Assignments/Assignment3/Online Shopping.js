@@ -16,9 +16,9 @@ function calculateFinalAmount(orderAmount) {
     }
     else {
         let finalPrice = orderAmount + 10;
-        console.log(orderAmount, '+ $10 shipping charges ')
+        console.log('Order price $', orderAmount, '+ $10 shipping charges ')
         console.log('Total Price $', finalPrice);
     }
 }
 
-calculateFinalAmount(1150);
+calculateFinalAmount(50);
