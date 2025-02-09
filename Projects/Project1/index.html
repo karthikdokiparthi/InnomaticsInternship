@@ -236,48 +236,52 @@
     <section>
         <div class="success-section">
             <h2>Here Are Some Of Our Success Stories</h2>
-            <div class="main-grid">
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Aaesha_Azeemuddin-400x516.jpg"
-                        alt="error">
+            <div class="grid-wrapper">
+                <div class="main-grid">
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Aaesha_Azeemuddin-400x516.jpg"
+                            alt="error">
+                    </div>
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Alladi_Ranjith-400x516.jpg"
+                            alt="error">
+                    </div>
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Cherukupalli_Indhu-400x516.jpg"
+                            alt="error">
+                    </div>
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/G._Venkata_Mareswararao-400x516.jpg"
+                            alt="error">
+                    </div>
                 </div>
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Alladi_Ranjith-400x516.jpg"
-                        alt="error">
-                </div>
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Cherukupalli_Indhu-400x516.jpg"
-                        alt="error">
-                </div>
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/G._Venkata_Mareswararao-400x516.jpg"
-                        alt="error">
+
+                <div class="main-grid">
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Guruprasad_Madhusudhan_Kamtam-400x516.jpg"
+                            alt="error">
+                    </div>
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/P_Sri_Harsha-400x516.jpg"
+                            alt="error">
+                    </div>
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Parla_Ram_Charan-400x516.jpg"
+                            alt="error">
+                    </div>
+                    <div class="img-grid">
+                        <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Venkata_Surya_Vishal_Ganti-400x516.jpg"
+                            alt="error">
+                    </div>
                 </div>
             </div>
 
-            <div class="main-grid">
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Guruprasad_Madhusudhan_Kamtam-400x516.jpg"
-                        alt="error">
-                </div>
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/P_Sri_Harsha-400x516.jpg"
-                        alt="error">
-                </div>
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Parla_Ram_Charan-400x516.jpg"
-                        alt="error">
-                </div>
-                <div class="img-grid">
-                    <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Venkata_Surya_Vishal_Ganti-400x516.jpg"
-                        alt="error">
-                </div>
-            </div>
-            <button onclick="" class="btn-move">1</button>
-            <button onclick="" class="btn-move">2</button>
+            <button onclick="changeGrid(-1)" class="nav-btn back">&#8249;</button>
+            <button onclick="changeGrid(1)" class="nav-btn front">&#8250;</button>
         </div>
     </section>
     <script>
+        //review-section script
         let slideIndex = 0;
         const slides = document.querySelector(".slides");
         const totalSlides = document.querySelectorAll(".slide").length;
@@ -289,6 +293,19 @@
             if (slideIndex < 0) slideIndex = totalSlides - 1;
 
             slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+        //success-story script
+        let index = 0;
+        const gridWrapper = document.querySelector(".grid-wrapper");
+        const totalGrids = document.querySelectorAll(".main-grid").length;
+
+        function changeGrid(direction) {
+            index += direction;
+
+            if (index >= totalGrids) index = 0;
+            if (index < 0) index = totalGrids - 1;
+
+            gridWrapper.style.transform = `translateX(${-index * 100}%)`;
         }
     </script>
 </body>

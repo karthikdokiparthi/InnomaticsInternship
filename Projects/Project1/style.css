@@ -504,29 +504,35 @@ a {
 }
 
 .success-section {
+    position: relative;
     max-width: 100%;
-    height: auto;
-    justify-content: center;
     text-align: center;
     margin-top: 10px;
     background-color: #dadada;
+    overflow: hidden;
 }
 
 .success-section h2 {
     font-weight: 100;
     font-size: 2rem;
     padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
 }
 
 .main-grid {
     display: flex;
     justify-content: center;
-    margin: 25px 50px 25px 0;
-
+    flex: 1;
+    padding: 0 170px;
 }
 
 .img-grid {
-    position: relative;
     margin: 5px;
 }
 
@@ -537,12 +543,22 @@ a {
     border-radius: 25px;
 }
 
-.btn-move {
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     border: none;
-    background-color: #dadada;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 0 20px;
-    right: 10px;
+    color: rgb(35, 34, 34);
+    font-size: 24px;
     cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.front {
+    right: 20px;
+}
+
+.back {
+    left: 20px;
 }
