@@ -800,8 +800,508 @@ footer {
     text-align: center;
 }
 
-footer p {
-    padding-top: 12px;
+footer a {
+    font-weight: 500;
     font-size: 0.9rem;
     color: white;
+}
+
+footer p {
+    padding-top: 12px;
+}
+
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    #navbar-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar-list {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #navbar-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navbar-list li {
+        margin: 5px;
+    }
+
+    #navbar-list button {
+        margin-left: 0;
+    }
+
+    #main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #data-container {
+        max-width: 90%;
+        margin-left: 20px;
+    }
+
+    #grid-section {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    #courses-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: 50%;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-course {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantages {
+        max-width: 90%;
+        margin-left: 0;
+    }
+
+    #reference {
+        max-width: 90%;
+        margin: 20px 0;
+    }
+
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .details-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .details-info {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .experts h2 {
+        margin-right: 0;
+    }
+
+    .slider-container {
+        width: 90%;
+    }
+
+    .slides {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .slide p {
+        margin: 20px;
+    }
+
+    .main-grid {
+        padding: 0 20px;
+    }
+
+    .img-grid img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .information-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-company,
+    .courses-offered,
+    .company-locations {
+        max-width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+/* Mobile Phones (up to 767px) */
+@media (max-width: 768px) {
+    #enquire {
+        padding-left: 20px;
+    }
+
+    #enquire h2 {
+        margin-right: 10px;
+    }
+
+    #enquire a {
+        margin-right: 10px;
+    }
+
+    #navbar-main {
+        margin-bottom: 30px;
+    }
+
+    #navbar-img img {
+        width: 250px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    #navbar-list ul {
+        flex-direction: column;
+    }
+
+    #navbar-list li {
+        margin: 10px 0;
+    }
+
+    #navbar-list button {
+        margin-top: 10px;
+    }
+
+    .slideshow-container {
+        height: 20vh;
+    }
+
+    .nav-bar {
+        font-size: 18px;
+    }
+
+    .prev {
+        margin-left: 20px;
+    }
+
+    .next {
+        margin-right: 20px;
+    }
+
+    #data-container h1 {
+        font-size: x-large;
+    }
+
+    #data-container p {
+        font-size: 14px;
+    }
+
+    #grid-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .grid i {
+        font-size: 30px;
+    }
+
+    .grid p {
+        font-size: 0.9rem;
+    }
+
+    #courses-grid h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-course h2 {
+        font-size: 1rem;
+    }
+
+    .card-course p {
+        font-size: 0.8rem;
+    }
+
+    .links-container ul {
+        margin: 10px 20px;
+    }
+
+    .links-container ul li {
+        padding: 5px 10px;
+    }
+
+    .details-container {
+        padding: 10px;
+    }
+
+    .details-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .details-info p {
+        font-size: 14px;
+    }
+
+    .experts h2 {
+        font-size: 1.5rem;
+    }
+
+    .experts a {
+        padding: 5px 10px;
+    }
+
+    .review-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .slide h2 {
+        font-size: 1.5rem;
+    }
+
+    .slide p {
+        font-size: 14px;
+    }
+
+    .success-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .img-grid img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-box h3 {
+        font-size: 1rem;
+    }
+
+    .blog-box p {
+        font-size: 0.8rem;
+    }
+
+    .about-company p {
+        font-size: 0.9rem;
+    }
+
+    .courses-offered h2 {
+        font-size: 1.2rem;
+    }
+
+    .courses-offered ul li {
+        font-size: 0.9rem;
+    }
+
+    .company-locations h2 {
+        font-size: 1.2rem;
+    }
+
+    .company-locations p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile Phones (up to 425px) */
+@media (max-width: 425px) {
+    #enquire {
+        padding-left: 20px;
+    }
+
+    #enquire h2 {
+        margin-right: 10px;
+    }
+
+    #enquire a {
+        margin-right: 10px;
+    }
+
+    #navbar-main {
+        margin-bottom: 30px;
+    }
+
+    #navbar-img img {
+        width: 250px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    #navbar-list ul {
+        flex-direction: column;
+    }
+
+    #navbar-list li {
+        margin: 10px 0;
+    }
+
+    #navbar-list button {
+        margin-top: 10px;
+    }
+
+    .slideshow-container {
+        height: 20vh;
+    }
+
+    .nav-bar {
+        font-size: 18px;
+    }
+
+    .prev {
+        margin-left: 20px;
+    }
+
+    .next {
+        margin-right: 20px;
+    }
+
+    #data-container h1 {
+        font-size: x-large;
+    }
+
+    #data-container p {
+        font-size: 14px;
+    }
+
+    #grid-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .grid i {
+        font-size: 30px;
+    }
+
+    .grid p {
+        font-size: 0.9rem;
+    }
+
+    #courses-grid h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-course h2 {
+        font-size: 1rem;
+    }
+
+    .card-course p {
+        font-size: 0.8rem;
+    }
+
+    #training {
+        width: 100%;
+        height: auto;
+    }
+
+    .links-container ul {
+        margin: 10px 20px;
+    }
+
+    .links-container ul li {
+        font-size: 1px;
+        font-weight: 100;
+    }
+
+    .details-container {
+        padding: 10px;
+    }
+
+    .details-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .details-info p {
+        font-size: 14px;
+    }
+
+    .experts h2 {
+        font-size: 1.5rem;
+    }
+
+    .experts a {
+        padding: 5px 10px;
+    }
+
+    .review-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .slide h2 {
+        font-size: 1.5rem;
+    }
+
+    .slide p {
+        font-size: 14px;
+    }
+
+    .success-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .img-grid img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-box h3 {
+        font-size: 1rem;
+    }
+
+    .blog-box p {
+        font-size: 0.8rem;
+    }
+
+    .about-company p {
+        font-size: 0.9rem;
+    }
+
+    .courses-offered h2 {
+        font-size: 1.2rem;
+    }
+
+    .courses-offered ul li {
+        font-size: 0.9rem;
+    }
+
+    .company-locations h2 {
+        font-size: 1.2rem;
+    }
+
+    .company-locations p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="home">
         <div id="enquire">
             <h2>Enquire Now: </h2>
             <a href="">Hyd: <i class="fa-solid fa-phone" style="color: #ff0000;"></i> 9951666670</a>
@@ -20,16 +20,17 @@
         </div>
         <diV id="navbar-main">
             <div id="navbar-img">
-                <a href=""><img src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png" /></a>
+                <a href="" target="_self"><img
+                        src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png" /></a>
             </div>
             <div id="navbar-list">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">IT Scholars Program</a></li>
-                    <li><a href="">Internship</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Events</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#course">Courses</a></li>
+                    <li><a href="#training">IT Scholars Program</a></li>
+                    <li><a href="#">Internship</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#events">Events</a></li>
                 </ul>
                 <button><i class="fa-solid fa-indian-rupee-sign" style="color: #ffffff;"></i> Pay Now</button>
             </div>
@@ -133,7 +134,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="course">
         <div id="courses-grid">
             <h1>Trending Courses of 2025</h1>
             <div class="courses">
@@ -194,11 +195,11 @@
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a href="https://www.youtube.com/channel/UC9G7o2iVkKJDhquyCT7Va2g">Watch More Videos</a>
+                <a href="https://www.youtube.com/channel/UC9G7o2iVkKJDhquyCT7Va2g" target="_blank">Watch More Videos</a>
             </div>
         </div>
     </section>
-    <section>
+    <section id="training">
         <div id="choose">
             <h2>Why People Choose Our Training</h2>
             <div class="links-container">
@@ -329,7 +330,7 @@
             <button onclick="changeGrid(1)" class="nav-btn front">&#8250;</button>
         </div>
     </section>
-    <section>
+    <section id="events">
         <div class="blog-section">
             <h2>Read Latest Business News & Blog updates</h2>
             <div class="main-box">
@@ -354,7 +355,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="about">
         <div class="information-section">
             <div class="about-company">
                 <img src="https://www.innomatics.in/wp-content/uploads/2023/01/innomatics-footer-logo.png" />
@@ -370,16 +371,16 @@
                     valuable certification upon completion, empowering individuals to excel in their careers.
                 </p>
                 <div class="social-media-icons">
-                    <a href="https://www.linkedin.com/school/innomatics-research-labs/"><i class="fa-brands fa-linkedin"
-                            style="color: #0365b0;"></i></a>
-                    <a href="https://www.facebook.com/innomaticshyd"><i class="fa-brands fa-square-facebook"
-                            style="color: #1b6af3;"></i></a>
-                    <a href="https://www.instagram.com/innomatics_research_labs/"><i
+                    <a href="https://www.linkedin.com/school/innomatics-research-labs/" target="_blank"><i
+                            class="fa-brands fa-linkedin" style="color: #0365b0;"></i></a>
+                    <a href="https://www.facebook.com/innomaticshyd" target="_blank"><i
+                            class="fa-brands fa-square-facebook" style="color: #1b6af3;"></i></a>
+                    <a href="https://www.instagram.com/innomatics_research_labs/" target="_blank"><i
                             class="fa-brands fa-square-instagram" style="color: #e13d4d;"></i></a>
-                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Finnomaticshyd"><i
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Finnomaticshyd" target="_blank"><i
                             class="fa-brands fa-square-x-twitter" style="color:white;"></i></a>
-                    <a href="https://www.youtube.com/channel/UC9G7o2iVkKJDhquyCT7Va2g"><i class="fa-brands fa-youtube"
-                            style="color: #d0161f;"></i></a>
+                    <a href="https://www.youtube.com/channel/UC9G7o2iVkKJDhquyCT7Va2g" target="_blank"><i
+                            class="fa-brands fa-youtube" style="color: #d0161f;"></i></a>
 
                 </div>
 
@@ -427,7 +428,7 @@
                 <div class="inner-container">
                     <h3><i class="fa-solid fa-phone" style="color: #ca1c1c;"></i><a href="">Phone/Whatsapp:
                         </a></h3>
-                    <p>+91 9951666670/ +91 9951666671 /+91 9951666672</p>
+                    <p>+919951666670/ +919951666671 /+919951666672</p>
                 </div>
                 <div class="inner-container">
                     <h3><i class="fa-solid fa-phone" style="color: #ca1c1c;"></i><a href="">Email Us:
@@ -460,7 +461,6 @@
             showSlides();
         }
 
-
         //review-section script
         let slideIndex = 0;
         const slides = document.querySelector(".slides");
@@ -489,7 +489,9 @@
         }
     </script>
     <footer>
-        <p>© 2025 Innomatics Research Labs Pvt Ltd, All rights reserved.</p>
+        <a href="#home">
+            <p>© 2025 Innomatics Research Labs Pvt Ltd, All rights reserved.</p>
+        </a>
     </footer>
 </body>
 
