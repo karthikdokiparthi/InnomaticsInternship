@@ -392,7 +392,7 @@
     {
         "id": 41,
         "img": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
-        "title": "PUMA BLACK-OCE",
+        "title": "PUMA-OCE",
         "reviews": "(123 reviews)",
         "prevPrice": "Rs.5,000",
         "newPrice": "1499",
@@ -410,13 +410,13 @@
         "category": "footwear"
     },
     {
-        "id": 43,
-        "img": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
-        "title": "Fusion Evo Golf Shoe",
+        "id": 58,
+        "img": "https://tse3.mm.bing.net/th?id=OIP.LVFe3Yi38P-gfMcSnRKT4gHaHa&pid=Api&P=0&h=180",
+        "title": "Bata Women's SANDALS",
         "reviews": "(123 reviews)",
         "prevPrice": "Rs.4,000",
-        "newPrice": "1398",
-        "company": "Puma",
+        "newPrice": "799",
+        "company": "none",
         "category": "footwear"
     },
     {
@@ -556,16 +556,6 @@
         "reviews": "(123 reviews)",
         "prevPrice": "Rs.4,000",
         "newPrice": "849",
-        "company": "none",
-        "category": "footwear"
-    },
-    {
-        "id": 58,
-        "img": "https://tse3.mm.bing.net/th?id=OIP.LVFe3Yi38P-gfMcSnRKT4gHaHa&pid=Api&P=0&h=180",
-        "title": "Bata Women's SANDALS",
-        "reviews": "(123 reviews)",
-        "prevPrice": "Rs.4,000",
-        "newPrice": "799",
         "company": "none",
         "category": "footwear"
     }
