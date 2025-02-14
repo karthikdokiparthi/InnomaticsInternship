@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="menu">
+
+    </div>
+
+    <script>
+        let menuData = [];
+        function fetchData() {
+            fetch('product.json')
+                .then(response => response.json())
+                .then(data => {
+                    menuData = data;
+                    console.log(menuData)
+                    dispalyData();
+                });
+        }
+        fetchData();
+        function dispalyData() {
+            let card = document.getElementById('menu');
+            let cardHTML = '';
+            menuData.forEach(data => {
+                cardHTML +=
+                    `<div class="color">
+                    <img src=${data.img} alt=${data.title}/>
+                    <h3>${data.title}</h3>
+                    <p>${data.prevPrice}</p>
+                    <p>Rs.${data.newPrice}</p>
+                    <p></p>
+                    </div>`;
+            })
+            card.innerHTML = cardHTML;
+
+        }
+    </script>
+</body>
+
+</html>

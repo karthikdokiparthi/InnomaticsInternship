@@ -1,0 +1,682 @@
+[
+    {
+        "id": 1,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012151034-Pink-PINK-1000012151034_01-2100.jpg",
+        "title": "Men Solid Boxy Fit ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1500",
+        "company": "Casual",
+        "category": "cloths"
+    },
+    {
+        "id": 2,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012151034-Green-OLIVEGREEN-1000012151034_02-2100.jpg",
+        "title": "Collar Casual Shirt",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,500",
+        "newPrice": "2000",
+        "company": "Casual",
+        "category": "cloths"
+    },
+    {
+        "id": 3,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000011352890-Green-GREEN-1000011352890_01-2100.jpg",
+        "title": "Men Solid Slim Shirt",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Formal",
+        "category": "cloths"
+    },
+    {
+        "id": 4,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000011468206-Yellow-MUSTARD-1000011468206-25072022_01-2100.jpg",
+        "title": "Men Solid Slim Shirt",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Formal",
+        "category": "cloths"
+    },
+    {
+        "id": 5,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000011284691-Blue-NAVY-1000011284691-16072022_01-2100.jpg",
+        "title": "Men Solid Slim Shirt ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Formal",
+        "category": "cloths"
+    },
+    {
+        "id": 6,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012977761-Blue-BLUE-1000012977761_01-2100.jpg",
+        "title": "Men Relaxed Fit Shirt",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Casual",
+        "category": "cloths"
+    },
+    {
+        "id": 7,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012627006-Red-MAROON-1000012627006_01-2100.jpg",
+        "title": "Collar Casual Shirt",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Formal",
+        "category": "cloths"
+    },
+    {
+        "id": 8,
+        "img": "https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012977761-Green-GREEN-1000012977761_01-2100.jpg",
+        "title": "Men Relaxed Fit Shirt",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1500",
+        "company": "Casual",
+        "category": "cloths"
+    },
+    {
+        "id": 9,
+        "img": "https://m.media-amazon.com/images/I/51KzWpr4wqL._SY879_.jpg",
+        "title": "RAGZO Men's Cotton Fit ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 10,
+        "img": "https://m.media-amazon.com/images/I/51Zi8fZ37KL._SX679_.jpg",
+        "title": "TOPLOT Men's Regular Fit",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 11,
+        "img": "https://m.media-amazon.com/images/I/51wm84K+iLL._SY879_.jpg",
+        "title": "Lymio Men Cargo",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1500",
+        "company": "Cargo",
+        "category": "cloths"
+    },
+    {
+        "id": 12,
+        "img": "https://m.media-amazon.com/images/I/61kR5YNmm9S._SY879_.jpg",
+        "title": "MANCREW Regular Fit ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 13,
+        "img": "https://m.media-amazon.com/images/I/61tfGGTP2UL._SY879_.jpg",
+        "title": "Lymio Men Cargo",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1500",
+        "company": "Cargo",
+        "category": "cloths"
+    },
+    {
+        "id": 14,
+        "img": "https://m.media-amazon.com/images/I/81HoA9uLEPL._SY879_.jpg",
+        "title": "KETCH Men Skinny Fit",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1500",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 15,
+        "img": "https://m.media-amazon.com/images/I/71uSBkPXhTL._SY879_.jpg",
+        "title": "Lymio Jeans for Men",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 16,
+        "img": "https://m.media-amazon.com/images/I/81BqVdB274L._SY879_.jpg",
+        "title": "Casual Pants for Men",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 17,
+        "img": "https://m.media-amazon.com/images/I/614q9dL+D4L._SY741_.jpg",
+        "title": "Floral Print Anarkali Kurta",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 18,
+        "img": "https://m.media-amazon.com/images/I/619rlsVemGL._SY879_.jpg",
+        "title": "Women Floral Printed Kurta",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Cotton",
+        "category": "cloths"
+    },
+    {
+        "id": 19,
+        "img": "https://m.media-amazon.com/images/I/71q+7G89EgL._SY879_.jpg",
+        "title": "Boat Sleeveless Dress",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 20,
+        "img": "https://m.media-amazon.com/images/I/71Xy186ZyYL._SY879_.jpg",
+        "title": "Women's Cotton Dress",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Cotton",
+        "category": "cloths"
+    },
+    {
+        "id": 21,
+        "img": "https://m.media-amazon.com/images/I/71UL+IvOApL._SY879_.jpg",
+        "title": "Maxi Fit and Flare Dress",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "coord",
+        "category": "cloths"
+    },
+    {
+        "id": 22,
+        "img": "https://m.media-amazon.com/images/I/51DGMGSjcmL._SY879_.jpg",
+        "title": "Formal Coord Set ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Formal-WM",
+        "category": "cloths"
+    },
+    {
+        "id": 23,
+        "img": "https://m.media-amazon.com/images/I/71v7cBZQgeL._SY879_.jpg",
+        "title": "GRECIILOOKS Dress",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Cotton",
+        "category": "cloths"
+    },
+    {
+        "id": 24,
+        "img": "https://m.media-amazon.com/images/I/81V1134YEfL._SY879_.jpg",
+        "title": "MissChase Women's Dress",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 25,
+        "img": "https://m.media-amazon.com/images/I/41ykC0f0VTL.jpg",
+        "title": " Banarasi Silk Saree ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Design",
+        "category": "cloths"
+    },
+    {
+        "id": 26,
+        "img": "https://m.media-amazon.com/images/I/71HunXhqV6L._SX569_.jpg",
+        "title": " Elegant Chiffon Saree",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "900",
+        "company": "Silk",
+        "category": "cloths"
+    },
+    {
+        "id": 27,
+        "img": "https://m.media-amazon.com/images/I/716ny1N8KUL._SY879_.jpg",
+        "title": "Georgette Saree ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "900",
+        "company": "Silk",
+        "category": "cloths"
+    },
+    {
+        "id": 28,
+        "img": "https://m.media-amazon.com/images/I/71HpSlR51bL._SY879_.jpg",
+        "title": "Jacquard Cotton Silk Saree",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Design",
+        "category": "cloths"
+    },
+    {
+        "id": 29,
+        "img": "https://m.media-amazon.com/images/I/81nD-eKSTLL._SY879_.jpg",
+        "title": "Chiffon Batik Printed Saree ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Design",
+        "category": "cloths"
+    },
+    {
+        "id": 30,
+        "img": "https://m.media-amazon.com/images/I/71Lhm57Tg+L._SX679_.jpg",
+        "title": "Kanchipuram Silk Sarees",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "900",
+        "company": "Silk",
+        "category": "cloths"
+    },
+    {
+        "id": 31,
+        "img": "https://m.media-amazon.com/images/I/719lhwUHaVL._SX569_.jpg",
+        "title": "Printed Zari Stripe Saree",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "900",
+        "company": "Silk",
+        "category": "cloths"
+    },
+    {
+        "id": 32,
+        "img": "https://m.media-amazon.com/images/I/610p2+2mqQL._SX679_.jpg",
+        "title": "Silk Banarasi Sarees ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,900",
+        "newPrice": "1200",
+        "company": "Design",
+        "category": "cloths"
+    },
+    {
+        "id": 33,
+        "img": "https://m.media-amazon.com/images/I/71By56wTFzL._SX679_.jpg",
+        "title": "Yashika Georgette Saree",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1000",
+        "company": "Design",
+        "category": "cloths"
+    },
+    {
+        "id": 34,
+        "img": "https://m.media-amazon.com/images/I/812iQ5AIE9L._SY879_.jpg",
+        "title": "Banarasi Silk Sarees",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,500",
+        "newPrice": "1800",
+        "company": "Campus Sutra",
+        "category": "cloths"
+    },
+    {
+        "id": 35,
+        "img": "https://m.media-amazon.com/images/I/41bpuUqgTwL.jpg",
+        "title": "Formal Coord Set ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1000",
+        "company": "Formal-WM",
+        "category": "cloths"
+    },
+    {
+        "id": 36,
+        "img": "https://m.media-amazon.com/images/I/51MjRuzKB1L._SY879_.jpg",
+        "title": "Sleeve Co-ord Blazer ",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "500",
+        "company": "Formal-WM",
+        "category": "cloths"
+    },
+    {
+        "id": 37,
+        "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+        "title": "Nike Air Monarch IV",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "2000",
+        "company": "Nike",
+        "category": "footwear"
+    },
+    {
+        "id": 38,
+        "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+        "title": "Nike Air Vapormax Plus",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,500",
+        "newPrice": "2500",
+        "company": "Nike",
+        "category": "footwear"
+    },
+    {
+        "id": 39,
+        "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+        "title": "Nike Waffle One Sneaker",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,000",
+        "newPrice": "1000",
+        "company": "Nike",
+        "category": "footwear"
+    },
+    {
+        "id": 40,
+        "img": "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
+        "title": "Adidas Running Shoe",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,000",
+        "newPrice": "1500",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 41,
+        "img": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
+        "title": "Flat Slip On Pumps",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,000",
+        "newPrice": "2500",
+        "company": "Vans",
+        "category": "footwear"
+    },
+    {
+        "id": 42,
+        "img": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
+        "title": "Knit Ballet Flat",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,000",
+        "newPrice": "1200",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 43,
+        "img": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg",
+        "title": "Loafer Flats",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "2500",
+        "company": "Vans",
+        "category": "footwear"
+    },
+    {
+        "id": 44,
+        "img": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg",
+        "title": "Nike Zoom Freak",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1200",
+        "company": "Nike",
+        "category": "footwear"
+    },
+    {
+        "id": 45,
+        "img": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
+        "title": "Adidas Men's Sneaker",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,500",
+        "newPrice": "1500",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 46,
+        "img": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+        "title": "PUMA BLACK-OCE",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.5,000",
+        "newPrice": "1500",
+        "company": "Puma",
+        "category": "footwear"
+    },
+    {
+        "id": 47,
+        "img": "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg",
+        "title": "Pacer Future Sneaker",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1500",
+        "company": "Puma",
+        "category": "footwear"
+    },
+    {
+        "id": 48,
+        "img": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
+        "title": "Unisex-Adult Super",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,000",
+        "newPrice": "1000",
+        "company": "Puma",
+        "category": "footwear"
+    },
+    {
+        "id": 49,
+        "img": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg",
+        "title": "Roma Basic Sneaker",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1500",
+        "company": "Puma",
+        "category": "footwear"
+    },
+    {
+        "id": 50,
+        "img": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg",
+        "title": "Pacer Future Doubleknit",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,000",
+        "newPrice": "1500",
+        "company": "Puma",
+        "category": "footwear"
+    },
+    {
+        "id": 51,
+        "img": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+        "title": "Fusion Evo Golf Shoe",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1500",
+        "company": "Puma",
+        "category": "footwear"
+    },
+    {
+        "id": 52,
+        "img": "https://m.media-amazon.com/images/I/719gdz8lsTS._AC_UX575_.jpg",
+        "title": "Rainbow Chex Skate",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,000",
+        "newPrice": "1000",
+        "company": "Vans",
+        "category": "footwear"
+    },
+    {
+        "id": 53,
+        "img": "https://www.artigianodelcuo.io/2915-thickbox_default/handmade-mens-sandals-in-dark-brown-leather-made-in-italy.jpg",
+        "title": "Leather Sandals",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "Vans",
+        "category": "footwear"
+    },
+    {
+        "id": 54,
+        "img": "https://m.media-amazon.com/images/I/91jG058XneL._SY695_.jpg",
+        "title": "Sparx Men's Sandal",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "Sparx",
+        "category": "footwear"
+    },
+    {
+        "id": 55,
+        "img": "https://m.media-amazon.com/images/I/41-nSDDEg1L._SY695_.jpg",
+        "title": "CORK SOLE SANDALS",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "none",
+        "category": "footwear"
+    },
+    {
+        "id": 56,
+        "img": "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg",
+        "title": "Chunky High Heel",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,000",
+        "newPrice": "1500",
+        "color": "black",
+        "category": "footwear"
+    },
+    {
+        "id": 57,
+        "img": "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg",
+        "title": "Slip On Stiletto High Heel",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "2000",
+        "company": "puma",
+        "category": "footwear"
+    },
+    {
+        "id": 58,
+        "img": "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg",
+        "title": "DREAM PAIRS Court Heel",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,000",
+        "newPrice": "1500",
+        "company": "none",
+        "category": "footwear"
+    },
+    {
+        "id": 59,
+        "img": "https://m.media-amazon.com/images/I/81fgqhk+dDL._SX695_.jpg",
+        "title": "NIKE MensflexRunningshoe",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,000",
+        "newPrice": "1500",
+        "company": "Nike",
+        "category": "footwear"
+    },
+    {
+        "id": 60,
+        "img": "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg",
+        "title": "Low Mid Block Heels",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "none",
+        "category": "footwear"
+    },
+    {
+        "id": 61,
+        "img": "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg",
+        "title": "Chunky High Heel",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 62,
+        "img": "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg",
+        "title": "Amore Fashion Stilettos",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.3,500",
+        "newPrice": "2000",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 63,
+        "img": "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg",
+        "title": "Bridal Sandals Glitter",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,500",
+        "newPrice": "2000",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 64,
+        "img": "https://m.media-amazon.com/images/I/71yhoZP0l6L._AC_UY695_.jpg",
+        "title": "Wedding Prom Bridal",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.2,500",
+        "newPrice": "1200",
+        "company": "Adidas",
+        "category": "footwear"
+    },
+    {
+        "id": 65,
+        "img": "https://www.bfgcdn.com/1500_1500_90/125-0540/crocs-womens-tulum-sandal-sandals-detail-7.jpg",
+        "title": "Bata Women's SANDALS",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "none",
+        "category": "footwear"
+    },
+    {
+        "id": 66,
+        "img": "https://tse1.mm.bing.net/th?id=OIP.cAXi08z3v7f7h5iBMfoodwHaHa&pid=Api&P=0&h=180",
+        "title": "Bata Women's SANDALS",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "none",
+        "category": "footwear"
+    },
+    {
+        "id": 67,
+        "img": "https://tse3.mm.bing.net/th?id=OIP.LVFe3Yi38P-gfMcSnRKT4gHaHa&pid=Api&P=0&h=180",
+        "title": "Bata Women's SANDALS",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "none",
+        "category": "footwear"
+    },
+    {
+        "id": 68,
+        "img": "https://www.russellandbromley.co.uk/file/general/fabslide_mobile.png",
+        "title": "SANDALS for Men",
+        "reviews": "(123 reviews)",
+        "prevPrice": "Rs.4,000",
+        "newPrice": "1000",
+        "company": "none",
+        "category": "footwear"
+    }
+]
