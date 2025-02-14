@@ -5,6 +5,7 @@
 
 nav {
     display: flex;
+    background-color: aliceblue;
 }
 
 .logo h1 {
@@ -28,7 +29,9 @@ nav {
     margin-left: 100px;
     display: inline;
     font-size: 20px;
+    color: rgb(98, 98, 211);
 }
+
 
 .cart {
     margin-left: 150px;
@@ -45,7 +48,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
-    column-gap: 10px;
     text-align: center;
 }
 

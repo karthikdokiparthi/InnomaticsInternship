@@ -16,10 +16,10 @@
         </div>
         <div class="navbar">
             <ul>
-                <li onclick="">Home</li>
-                <li>Mobiles</li>
-                <li>Cloths</li>
-                <li>Footwear</li>
+                <li onclick="fetchData()">Home</li>
+                <li onclick="dataCloths()">Cloths</li>
+                <li onclick="dataElectronics()">Mobiles</li>
+                <li onclick="dataFootwear()">Footwear</li>
             </ul>
         </div>
         <div class="cart">
@@ -43,7 +43,6 @@
                     dispalyData();
                 });
         }
-        fetchData();
         function dispalyData() {
             let card = document.getElementById('menu-grid');
             let cardHTML = '';
@@ -58,8 +57,58 @@
                     </div>`;
             })
             card.innerHTML = cardHTML;
-
         }
+
+        function dataElectronics() {
+            let card = document.getElementById("menu-grid");
+            let cardHTML = "";
+            let electronics = menuData.filter(ele => ele.category === "electronics");
+            electronics.forEach(data => {
+                cardHTML +=
+                    `<div class="grid-card">
+                    <img src=${data.img} alt=${data.title}/>
+                    <h3>${data.title}</h3>
+                    <p class="mark-dash">${data.prevPrice}</p>
+                    <p>Rs.${data.newPrice}</p>
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                    </div>`;
+            })
+            card.innerHTML = cardHTML;
+        }
+        function dataCloths() {
+            let card = document.getElementById("menu-grid");
+            let cardHTML = "";
+            let cloths = menuData.filter(cls => cls.category === "cloths");
+            cloths.forEach(data => {
+                cardHTML +=
+                    `<div class="grid-card">
+                    <img src=${data.img} alt=${data.title}/>
+                    <h3>${data.title}</h3>
+                    <p class="mark-dash">${data.prevPrice}</p>
+                    <p>Rs.${data.newPrice}</p>
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                    </div>`;
+            })
+            card.innerHTML = cardHTML;
+        }
+
+        function dataFootwear() {
+            let card = document.getElementById("menu-grid");
+            let cardHTML = "";
+            let footwear = menuData.filter(foot => foot.category === "footwear");
+            footwear.forEach(data => {
+                cardHTML += `
+                    <div class="grid-card">
+                    <img src=${data.img} alt=${data.title}/>
+                    <h3>${data.title}</h3>
+                    <p class="mark-dash">${data.prevPrice}</p>
+                    <p>Rs.${data.newPrice}</p>
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                    </div>`;
+            })
+            card.innerHTML = cardHTML;
+        }
+        fetchData();
     </script>
 </body>
 
