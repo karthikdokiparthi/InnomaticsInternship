@@ -10,6 +10,23 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">
+            <h1>ShopEase</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li onclick="">Home</li>
+                <li>Mobiles</li>
+                <li>Cloths</li>
+                <li>Footwear</li>
+            </ul>
+        </div>
+        <div class="cart">
+            <img
+                src="https://static.vecteezy.com/system/resources/previews/015/131/853/original/flat-shopping-cart-cartoon-wallpaper-modern-flat-design-for-shopping-online-website-layout-design-png.png">
+        </div>
+    </nav>
     <section>
         <div id="menu-grid">
 
@@ -23,7 +40,6 @@
                 .then(response => response.json())
                 .then(data => {
                     menuData = data;
-                    console.log(menuData)
                     dispalyData();
                 });
         }

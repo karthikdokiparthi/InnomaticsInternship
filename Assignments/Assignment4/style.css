@@ -3,6 +3,42 @@
     padding: 0;
 }
 
+nav {
+    display: flex;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 40px;
+}
+
+.navbar ul li {
+    margin-left: 100px;
+    display: inline;
+    font-size: 20px;
+}
+
+.cart {
+    margin-left: 150px;
+}
+
+.cart img {
+    width: 100px;
+    height: 100px;
+}
+
 #menu-grid {
     margin: 30px 0 0 20px;
     margin-bottom: 50px;
@@ -40,6 +76,10 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 2;
+}
+
+.grid-card h3:hover {
+    color: rgb(177, 33, 33);
 }
 
 .grid-card .mark-dash {
