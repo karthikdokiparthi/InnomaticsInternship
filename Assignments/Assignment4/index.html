@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/acf205ba5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <section>
+        <div id="menu-grid">
 
-    <div id="menu">
-
-    </div>
+        </div>
+    </section>
 
     <script>
         let menuData = [];
@@ -26,16 +29,16 @@
         }
         fetchData();
         function dispalyData() {
-            let card = document.getElementById('menu');
+            let card = document.getElementById('menu-grid');
             let cardHTML = '';
             menuData.forEach(data => {
                 cardHTML +=
-                    `<div class="color">
+                    `<div class="grid-card">
                     <img src=${data.img} alt=${data.title}/>
                     <h3>${data.title}</h3>
-                    <p>${data.prevPrice}</p>
+                    <p class="mark-dash">${data.prevPrice}</p>
                     <p>Rs.${data.newPrice}</p>
-                    <p></p>
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
                     </div>`;
             })
             card.innerHTML = cardHTML;

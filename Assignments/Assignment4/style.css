@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-grid {
+    margin: 30px 0 0 20px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.grid-card {
+    width: 300px;
+    height: 450px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.grid-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.grid-card img {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.grid-card h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.grid-card .mark-dash {
+    text-decoration: line-through;
+}
+
+.grid-card p {
+    line-height: 1.5;
+}
+
+.grid-card .btn {
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgb(188, 46, 46);
+    border: 1px solid rgb(188, 46, 46);
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+.grid-card .btn:hover {
+    background-color: rgb(188, 46, 46);
+    color: #fff;
+}
