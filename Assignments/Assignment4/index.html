@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Navbar section -->
     <nav>
         <div class="logo">
             <h1>ShopEase</h1>
@@ -30,11 +31,13 @@
             <span id="cart-count">0</span>
         </div>
     </nav>
+    <!-- Cards Container section -->
     <section id="main-container">
         <div id="menu-grid">
-
+            <!-- the inner text will comming from the java script -->
         </div>
     </section>
+    <!-- Cart Cintainer section -->
     <section>
         <div id="cart-container">
             <h2>Order Display</h2>
@@ -44,12 +47,14 @@
             <h3>Total: Rs. <span id="totalPrice">0.00</span></h3>
         </div>
     </section>
+    <!-- Footer section -->
     <footer>
         <a href="#main-container">&copy; 2025 ShopEase. Designed by Karthik Dokiparthi. All Rights Reserved.</a>
     </footer>
 
-
+    <!-- Entire java script -->
     <script>
+        //fetching  data form product.json
         let menuData = [];
         function fetchData() {
             fetch('product.json')
@@ -59,6 +64,7 @@
                     dispalyData();
                 });
         }
+        //Display data is inserting the innerHTML for card section
         function dispalyData() {
             let card = document.getElementById('menu-grid');
             let cardHTML = '';
@@ -75,6 +81,7 @@
             card.innerHTML = cardHTML;
         }
 
+        //differnt navbar links for requesting data they need
         function dataMobiles() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
@@ -92,6 +99,7 @@
             card.innerHTML = cardHTML;
         }
 
+        //differnt navbar links for requesting data they need
         function dataLaptops() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
@@ -109,6 +117,7 @@
             card.innerHTML = cardHTML;
         }
 
+        //differnt navbar links for requesting data they need
         function mensWear() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
@@ -126,6 +135,7 @@
             card.innerHTML = cardHTML;
         }
 
+        //differnt navbar links for requesting data they need
         function womensWear() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
@@ -143,6 +153,7 @@
             card.innerHTML = cardHTML;
         }
 
+        //differnt navbar links for requesting data they need
         function dataFootwear() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
@@ -159,12 +170,15 @@
             })
             card.innerHTML = cardHTML;
         }
+
+        //adding data to cart using addToCart function
         function addToCart(id) {
             const item = menuData.find(f => f.id === id);
             if (item) {
                 Order.addItems(item);
             }
         }
+        //the entire object is performing diffent functions like addItems,increase,decrease,remove cart items and calculate total amount 
         const Order = {
             items: [],
             addItems: function (item) {
@@ -209,6 +223,7 @@
             }
         };
 
+        //updates the cart section through updateOrderDisplay function
         function updateOrderDisplay() {
             const orderDisplay = document.getElementById('orderdisplay');
             if (Order.items.length === 0) {
@@ -236,6 +251,7 @@
             document.getElementById('totalPrice').textContent = Order.calaculateTotal();
             updateCartCount();
         }
+        //this function is used to count the,how many items in cart
         function updateCartCount() {
             const cartCountElement = document.getElementById("cart-count");
             cartCountElement.textContent = Order.items.length;
@@ -246,7 +262,9 @@
                 cartCountElement.style.display = "none";
             }
         }
+        // When the cart image is clicked, show or hide the cart
         document.querySelector(".cart img").addEventListener("click", function () {
+            // This helps in showing or hiding the cart section dynamically
             document.getElementById("cart-container").classList.toggle("open");
         });
 

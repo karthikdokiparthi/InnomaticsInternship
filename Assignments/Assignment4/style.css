@@ -7,6 +7,7 @@ body {
     padding-top: 70px;
 }
 
+/* Navbar */
 nav {
     position: fixed;
     top: 0;
@@ -67,6 +68,7 @@ nav {
     width: 100%;
 }
 
+/* Cards Section */
 #menu-grid {
     margin: 30px auto 50px auto;
     display: grid;
@@ -151,6 +153,7 @@ nav {
     transform: scale(1.1);
 }
 
+/* cart section */
 #cart-count {
     position: absolute;
     top: -5px;
@@ -257,6 +260,7 @@ h3 {
     color: #333;
 }
 
+/* Footer section */
 footer {
     text-align: center;
     padding: 10px;
