@@ -17,8 +17,10 @@
         <div class="navbar">
             <ul>
                 <li onclick="fetchData()">Home</li>
-                <li onclick="dataCloths()">Cloths</li>
-                <li onclick="dataElectronics()">Mobiles</li>
+                <li onclick="mensWear()">Men's Wear</li>
+                <li onclick="womensWear()">Women's Wear</li>
+                <li onclick="dataMobiles()">Mobiles</li>
+                <li onclick="dataLaptops()">Laptops</li>
                 <li onclick="dataFootwear()">Footwear</li>
             </ul>
         </div>
@@ -28,7 +30,7 @@
             <span id="cart-count">0</span>
         </div>
     </nav>
-    <section>
+    <section id="main-container">
         <div id="menu-grid">
 
         </div>
@@ -42,6 +44,10 @@
             <h3>Total: Rs. <span id="totalPrice">0.00</span></h3>
         </div>
     </section>
+    <footer>
+        <a href="#main-container">&copy; 2025 ShopEase. Designed by Karthik Dokiparthi. All Rights Reserved.</a>
+    </footer>
+
 
     <script>
         let menuData = [];
@@ -69,10 +75,10 @@
             card.innerHTML = cardHTML;
         }
 
-        function dataElectronics() {
+        function dataMobiles() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
-            let electronics = menuData.filter(ele => ele.category === "electronics");
+            let electronics = menuData.filter(ele => ele.category === "mobiles");
             electronics.forEach(data => {
                 cardHTML +=
                     `<div class="grid-card">
@@ -85,10 +91,45 @@
             })
             card.innerHTML = cardHTML;
         }
-        function dataCloths() {
+
+        function dataLaptops() {
             let card = document.getElementById("menu-grid");
             let cardHTML = "";
-            let cloths = menuData.filter(cls => cls.category === "cloths");
+            let electronics = menuData.filter(ele => ele.category === "laptops");
+            electronics.forEach(data => {
+                cardHTML +=
+                    `<div class="grid-card">
+                    <img src=${data.img} alt=${data.title}/>
+                    <h3>${data.title}</h3>
+                    <p class="mark-dash">${data.prevPrice}</p>
+                    <p>Rs.${data.newPrice}</p>
+                    <button class="btn" onclick="addToCart(${data.id})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>`;
+            })
+            card.innerHTML = cardHTML;
+        }
+
+        function mensWear() {
+            let card = document.getElementById("menu-grid");
+            let cardHTML = "";
+            let cloths = menuData.filter(cls => cls.category === "menscloths");
+            cloths.forEach(data => {
+                cardHTML +=
+                    `<div class="grid-card">
+                    <img src=${data.img} alt=${data.title}/>
+                    <h3>${data.title}</h3>
+                    <p class="mark-dash">${data.prevPrice}</p>
+                    <p>Rs.${data.newPrice}</p>
+                    <button class="btn" onclick="addToCart(${data.id})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>`;
+            })
+            card.innerHTML = cardHTML;
+        }
+
+        function womensWear() {
+            let card = document.getElementById("menu-grid");
+            let cardHTML = "";
+            let cloths = menuData.filter(cls => cls.category === "womenscloths");
             cloths.forEach(data => {
                 cardHTML +=
                     `<div class="grid-card">
@@ -199,7 +240,6 @@
             const cartCountElement = document.getElementById("cart-count");
             cartCountElement.textContent = Order.items.length;
 
-            // Show badge only if cart has items
             if (Order.items.length > 0) {
                 cartCountElement.style.display = "block";
             } else {

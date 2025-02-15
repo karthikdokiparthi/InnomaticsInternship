@@ -3,12 +3,20 @@
     padding: 0;
 }
 
+body {
+    padding-top: 70px;
+}
+
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: aliceblue;
-    padding: 10px 40px;
+    z-index: 1000;
 }
 
 .logo h1 {
@@ -69,7 +77,6 @@ nav {
     max-width: 1000px;
 }
 
-
 .grid-card {
     width: 250px;
     height: 400px;
@@ -79,7 +86,6 @@ nav {
     background-color: #fff;
     text-align: center;
 }
-
 
 .grid-card:hover {
     transform: scale(1.05);
@@ -132,6 +138,7 @@ nav {
 .cart {
     cursor: pointer;
     position: relative;
+    margin-right: 50px;
 }
 
 .cart img {
@@ -250,6 +257,155 @@ h3 {
     color: #333;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer:hover {
+    background-color: #333;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+/*  Responsivene Desgin */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    #menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .grid-card {
+        width: 200px;
+        height: 350px;
+    }
+
+    .grid-card img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .grid-card h3 {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .grid-card p {
+        line-height: 1.5;
+    }
+
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        font-size: 18px;
+    }
+
+    #cart-container {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    #menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grid-card {
+        width: 180px;
+        height: 320px;
+    }
+
+    .grid-card img {
+        width: 180px;
+        height: 220px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar ul li {
+        font-size: 16px;
+    }
+
+    #cart-container {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+/* Low-end Mobiles */
+@media (max-width: 480px) {
+    #menu-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .grid-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        font-size: 14px;
+    }
+
+    #cart-container {
+        width: 250px;
+        height: 350px;
+    }
+
+    .cart {
+        margin-right: 20px;
+    }
+
+    .cart img {
+        width: 40px;
+    }
 }

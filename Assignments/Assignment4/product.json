@@ -7,7 +7,7 @@
         "prevPrice": "Rs.1,49,999",
         "newPrice": "71999",
         "company": "Samsung",
-        "category": "electronics"
+        "category": "mobiles"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "prevPrice": "Rs.79,900",
         "newPrice": "61999",
         "company": "Apple",
-        "category": "electronics"
+        "category": "mobiles"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@
         "prevPrice": "Rs.32,999",
         "newPrice": "28999",
         "company": "OnePlus",
-        "category": "electronics"
+        "category": "mobiles"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "prevPrice": "Rs.61,999",
         "newPrice": "54999",
         "company": "iQOO",
-        "category": "electronics"
+        "category": "mobiles"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
         "prevPrice": "Rs.69,999",
         "newPrice": "54998",
         "company": "Realme",
-        "category": "electronics"
+        "category": "mobiles"
     },
     {
         "id": 6,
@@ -57,7 +57,7 @@
         "prevPrice": "Rs.71,773",
         "newPrice": "54990",
         "company": "HP",
-        "category": "electronics"
+        "category": "laptops"
     },
     {
         "id": 7,
@@ -67,7 +67,7 @@
         "prevPrice": "Rs.89,900",
         "newPrice": "67990",
         "company": "Apple",
-        "category": "electronics"
+        "category": "laptops"
     },
     {
         "id": 8,
@@ -77,7 +77,7 @@
         "prevPrice": "Rs.4,19,990",
         "newPrice": "347290",
         "company": "MSI",
-        "category": "electronics"
+        "category": "laptops"
     },
     {
         "id": 9,
@@ -87,7 +87,7 @@
         "prevPrice": "Rs.1,06,331",
         "newPrice": "75990",
         "company": "Dell",
-        "category": "electronics"
+        "category": "laptops"
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1495",
         "company": "Casual",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@
         "prevPrice": "Rs.3,500",
         "newPrice": "2450",
         "company": "Casual",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "999",
         "company": "Formal",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 13,
@@ -127,7 +127,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1199",
         "company": "Casual",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 15,
@@ -137,7 +137,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1149",
         "company": "Formal",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 16,
@@ -147,7 +147,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1449",
         "company": "Casual",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 17,
@@ -157,7 +157,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "998",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 18,
@@ -167,7 +167,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1298",
         "company": "Cargo",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 19,
@@ -177,7 +177,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1149",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 20,
@@ -187,7 +187,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1499",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 21,
@@ -197,7 +197,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1199",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 22,
@@ -207,7 +207,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "999",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "menscloths"
     },
     {
         "id": 23,
@@ -217,7 +217,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1049",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 24,
@@ -227,7 +227,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1199",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 25,
@@ -237,7 +237,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1299",
         "company": "Cotton",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 26,
@@ -247,7 +247,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "998",
         "company": "Formal-WM",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 27,
@@ -257,7 +257,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1129",
         "company": "Cotton",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 28,
@@ -267,7 +267,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1149",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 29,
@@ -277,7 +277,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1299",
         "company": "Design",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 30,
@@ -287,7 +287,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1249",
         "company": "Design",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 31,
@@ -297,7 +297,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "1198",
         "company": "Design",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 32,
@@ -307,7 +307,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "899",
         "company": "Silk",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 33,
@@ -317,7 +317,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "849",
         "company": "Silk",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 34,
@@ -327,7 +327,7 @@
         "prevPrice": "Rs.2,900",
         "newPrice": "1299",
         "company": "Design",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 35,
@@ -337,7 +337,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "999",
         "company": "Design",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 36,
@@ -347,7 +347,7 @@
         "prevPrice": "Rs.3,500",
         "newPrice": "1799",
         "company": "Campus Sutra",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 37,
@@ -357,7 +357,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "999",
         "company": "Formal-WM",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 38,
@@ -367,7 +367,7 @@
         "prevPrice": "Rs.2,500",
         "newPrice": "499",
         "company": "Formal-WM",
-        "category": "cloths"
+        "category": "womenscloths"
     },
     {
         "id": 39,
