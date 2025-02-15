@@ -25,11 +25,21 @@
         <div class="cart">
             <img
                 src="https://static.vecteezy.com/system/resources/previews/015/131/853/original/flat-shopping-cart-cartoon-wallpaper-modern-flat-design-for-shopping-online-website-layout-design-png.png">
+            <span id="cart-count">0</span>
         </div>
     </nav>
     <section>
         <div id="menu-grid">
 
+        </div>
+    </section>
+    <section>
+        <div id="cart-container">
+            <h2>Order Display</h2>
+            <ul id="orderdisplay">
+                <li>Your order is Empty</li>
+            </ul>
+            <h3>Total: Rs. <span id="totalPrice">0.00</span></h3>
         </div>
     </section>
 
@@ -53,7 +63,7 @@
                     <h3>${data.title}</h3>
                     <p class="mark-dash">${data.prevPrice}</p>
                     <p>Rs.${data.newPrice}</p>
-                    <button class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    <button class="btn" onclick="addToCart(${data.id})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                     </div>`;
             })
             card.innerHTML = cardHTML;
@@ -70,7 +80,7 @@
                     <h3>${data.title}</h3>
                     <p class="mark-dash">${data.prevPrice}</p>
                     <p>Rs.${data.newPrice}</p>
-                    <button class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    <button class="btn" onclick="addToCart(${data.id})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                     </div>`;
             })
             card.innerHTML = cardHTML;
@@ -86,7 +96,7 @@
                     <h3>${data.title}</h3>
                     <p class="mark-dash">${data.prevPrice}</p>
                     <p>Rs.${data.newPrice}</p>
-                    <button class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    <button class="btn" onclick="addToCart(${data.id})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                     </div>`;
             })
             card.innerHTML = cardHTML;
@@ -103,11 +113,103 @@
                     <h3>${data.title}</h3>
                     <p class="mark-dash">${data.prevPrice}</p>
                     <p>Rs.${data.newPrice}</p>
-                    <button class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    <button class="btn" onclick="addToCart(${data.id})"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
                     </div>`;
             })
             card.innerHTML = cardHTML;
         }
+        function addToCart(id) {
+            const item = menuData.find(f => f.id === id);
+            if (item) {
+                Order.addItems(item);
+            }
+        }
+        const Order = {
+            items: [],
+            addItems: function (item) {
+                const existingItem = this.items.find(i => i.id === item.id);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    this.items.push({ ...item, quantity: 1 });
+                }
+                updateOrderDisplay();
+            },
+            increaseItem: function (id) {
+                const item = this.items.find(i => i.id === id);
+                if (item) {
+                    if (item.quantity < 10) {
+                        item.quantity++;
+                        updateOrderDisplay();
+                    } else {
+                        alert("Maximum limit reached!");
+                    }
+                }
+            },
+            decreaseItem: function (id) {
+                const item = this.items.find(i => i.id === id);
+                if (item && item.quantity > 1) {
+                    item.quantity--;
+                } else {
+                    this.items = this.items.filter(i => i.id !== id);
+                }
+                updateOrderDisplay();
+            },
+            removeItem: function (id) {
+                this.items = this.items.filter(i => i.id !== id);
+                updateOrderDisplay();
+            },
+            calaculateTotal: function () {
+                let total = 0;
+                this.items.forEach((item) => {
+                    total += item.newPrice * item.quantity;
+                })
+                return total;
+            }
+        };
+
+        function updateOrderDisplay() {
+            const orderDisplay = document.getElementById('orderdisplay');
+            if (Order.items.length === 0) {
+                orderDisplay.innerHTML = "<li>Your cart is empty</li>";
+            } else {
+                let orderHTML = "";
+                Order.items.forEach(item => {
+                    orderHTML += `
+                <li>
+                    <div class="order-item-info">
+                        <img src="${item.img}"/>
+                        ${item.title} - ${item.quantity} pcs<br>
+                        Rs.${(item.newPrice * item.quantity).toFixed(2)}
+                    </div>
+                    <div class="order-item-btn">
+                        <button class="increase" onclick="Order.increaseItem(${item.id})">+</button>
+                        <button class="decrease" onclick="Order.decreaseItem(${item.id})">-</button>
+                        <button class="remove" onclick="Order.removeItem(${item.id})"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                </li>
+            `;
+                });
+                orderDisplay.innerHTML = orderHTML;
+            }
+            document.getElementById('totalPrice').textContent = Order.calaculateTotal();
+            updateCartCount();
+        }
+        function updateCartCount() {
+            const cartCountElement = document.getElementById("cart-count");
+            cartCountElement.textContent = Order.items.length;
+
+            // Show badge only if cart has items
+            if (Order.items.length > 0) {
+                cartCountElement.style.display = "block";
+            } else {
+                cartCountElement.style.display = "none";
+            }
+        }
+        document.querySelector(".cart img").addEventListener("click", function () {
+            document.getElementById("cart-container").classList.toggle("open");
+        });
+
         fetchData();
     </script>
 </body>
