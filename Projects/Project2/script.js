@@ -98,21 +98,28 @@ function flipCard() {
 }
 
 //checking for two cards matching
+const matchSound = new Audio('correctSound.mp3');
+const nomatchSound = new Audio('wrongSound.mp3');
+const matchWinSound = new Audio('winSound.wav');
+
 function checkForMatch() {
     const [card1, card2] = flippedCards;
 
     if (card1.dataset.id === card2.dataset.id) {
+        matchSound.play();
         matchedCards.push(card1, card2);
         flippedCards = [];
         card1.classList.add('matched');
         card2.classList.add('matched');
 
         if (matchedCards.length === doubleArrayData.length) {
+            matchWinSound.play();
             setTimeout(() => {
                 alert('You won the game!');
-            }, 500);
+            }, 1000);
         }
     } else {
+        nomatchSound.play();
         setTimeout(() => {
             card1.classList.remove('flipped');
             card2.classList.remove('flipped');
