@@ -1,6 +1,8 @@
 
 let dataArray = [];
 let doubleArrayData = [];
+
+//Fetching Data from json
 function fetchMethod(urlType) {
     if (urlType === "avengers.json") {
         fetch(urlType).then(response => response.json())
@@ -39,6 +41,13 @@ function fetchMethod(urlType) {
             })
     } else {
         console.log("url is not working")
+    }
+    //Restart game
+    document.getElementById('restartBtn').addEventListener('click', restartGame);
+    function restartGame() {
+        matchedCards = [];
+        flippedCards = [];
+        fetchMethod(urlType);
     }
 }
 fetchMethod("benten.json");
@@ -88,6 +97,7 @@ function flipCard() {
     }
 }
 
+//checking for two cards matching
 function checkForMatch() {
     const [card1, card2] = flippedCards;
 
