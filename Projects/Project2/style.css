@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -25,25 +26,49 @@ h1 {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(4, 100px);
     gap: 10px;
+    perspective: 1000px;
 }
 
 .card {
     width: 100px;
     height: 100px;
-    background-color: #3498db;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card .card-front,
+.card .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card .card-back {
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='%234caf50ff'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='none' fill='%23f44336ff'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     color: white;
-    cursor: pointer;
+}
+
+.card .card-front img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    transform: rotateY(0deg);
-    transition: transform 0.3s;
+    display: block;
 }
 
 .card.flipped {
-    background-color: #2ecc71;
+    transform: rotateY(180deg);
+}
+
+.card .card-front {
     transform: rotateY(180deg);
 }
 
@@ -56,6 +81,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
