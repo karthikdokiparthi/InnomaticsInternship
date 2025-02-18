@@ -10,6 +10,10 @@
 
 <body>
     <h1>Memory Card Matching Game</h1>
+    <div class="status-bar">
+        <span id="timer">Time: 30s</span>
+        <span id="score">Score: 0</span>
+    </div>
     <div class="game-container">
         <div class="grid" id="game-board"></div>
     </div>
@@ -23,25 +27,23 @@
         const matchSound = new Audio('correctSound.mp3');
         const nomatchSound = new Audio('wrongSound.mp3');
         const matchWinSound = new Audio('winSound.wav');
+        let score = 0;
+        let timer;
+        let timeLeft = 45;
 
         //Fetching Data from json
         function fetchMethod() {
-            fetch('Avengers.json').then(response => response.json())
+            fetch('avengers.json').then(response => response.json())
                 .then(data => {
-                    dataArray = data
+                    dataArray = data;
                     doubleArrayData = [...dataArray, ...dataArray];
                     let shuffledData = shuffleData(doubleArrayData);
                     generateCards(shuffledData);
-                })
-            //Restart game
-            document.getElementById('restartBtn').addEventListener('click', restartGame);
-            function restartGame() {
-                matchedCards = [];
-                flippedCards = [];
-                fetchMethod();
-            }
+                    score = 0;
+                    document.getElementById('score').textContent = `Score: ${score}`;
+                    startTimer();
+                });
         }
-        fetchMethod();
 
         //Shuffle the cards
         function shuffleData(array) {
@@ -98,10 +100,14 @@
                 card1.classList.add('matched');
                 card2.classList.add('matched');
 
+                score += 10;
+                document.getElementById('score').textContent = `Score: ${score}`;
+
                 if (matchedCards.length === doubleArrayData.length) {
+                    clearInterval(timer);
                     matchWinSound.play();
                     setTimeout(() => {
-                        alert('You won the game!');
+                        alert(`You won the game in ${45 - timeLeft} seconds! Score: ${score}`);
                     }, 1000);
                 }
             } else {
@@ -113,7 +119,29 @@
                 }, 1000);
             }
         }
-
+        //timer function for game
+        function startTimer() {
+            clearInterval(timer);
+            timeLeft = 45;
+            document.getElementById('timer').textContent = `Time: ${timeLeft}s`;
+            timer = setInterval(() => {
+                timeLeft--;
+                document.getElementById('timer').textContent = `Time: ${timeLeft}s`;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    alert('Time is up! Game Over.');
+                    restartGame();
+                }
+            }, 1000);
+        }
+        //Restart game
+        document.getElementById('restartBtn').addEventListener('click', restartGame);
+        function restartGame() {
+            matchedCards = [];
+            flippedCards = [];
+            fetchMethod();
+        }
+        fetchMethod();
     </script>
 </body>
 
