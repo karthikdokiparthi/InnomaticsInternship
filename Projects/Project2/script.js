@@ -4,40 +4,43 @@ let doubleArrayData = [];
 
 //Fetching Data from json
 function fetchMethod(urlType) {
-    if (urlType === "avengers.json") {
+    if (urlType === "Avengers.json") {
         fetch(urlType).then(response => response.json())
             .then(data => {
                 dataArray = data
                 doubleArrayData = [...dataArray, ...dataArray];
                 let shuffledData = shuffleData(doubleArrayData);
-                generateCards(shuffledData)
+                generateCards(shuffledData);
+                console.log(shuffledData);
             })
     }
-    else if (urlType === "pokemons.json") {
+    else if (urlType === "Pokemons.json") {
         fetch(urlType).then(response => response.json())
             .then(data => {
                 dataArray = data
                 doubleArrayData = [...dataArray, ...dataArray];
                 let shuffledData = shuffleData(doubleArrayData);
-                generateCards(shuffledData)
+                generateCards(shuffledData);
+                console.log(shuffledData);
             })
     }
-    else if (urlType === "benten.json") {
+    else if (urlType === "Benten.json") {
         fetch(urlType).then(response => response.json())
             .then(data => {
                 dataArray = data
                 doubleArrayData = [...dataArray, ...dataArray];
                 let shuffledData = shuffleData(doubleArrayData);
-                generateCards(shuffledData)
+                generateCards(shuffledData);
             })
     }
-    else if (urlType === "indianCricketTeam.json") {
+    else if (urlType === "indianCricketers.json") {
         fetch(urlType).then(response => response.json())
             .then(data => {
                 dataArray = data
                 doubleArrayData = [...dataArray, ...dataArray];
                 let shuffledData = shuffleData(doubleArrayData);
-                generateCards(shuffledData)
+                generateCards(shuffledData);
+                console.log(shuffledData);
             })
     } else {
         console.log("url is not working")
@@ -50,7 +53,7 @@ function fetchMethod(urlType) {
         fetchMethod(urlType);
     }
 }
-fetchMethod("benten.json");
+fetchMethod("indianCricketers.json");
 
 //Shuffle the cards
 function shuffleData(array) {
