@@ -7,11 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #282c34;
 }
 
 h1 {
     margin-top: 20px;
+    color: white;
 }
 
 .game-container {
@@ -49,7 +50,7 @@ h1 {
 }
 
 .card .card-back {
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='%234caf50ff'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='none' fill='%23f44336ff'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M10-10V0l10 10V0L10-10zm0 10L0 10v10l10-10V0zm0 30v10l10 10V40L10 30z'  stroke-width='1' stroke='none' fill='hsla(47,80.9%,61%,1)'/><path d='M10 10l10 10v10L10 20zm0 10L0 30v10l10-10z'  stroke-width='1' stroke='none' fill='hsla(4.1,89.6%,58.4%,1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +63,7 @@ h1 {
     height: 100%;
     border-radius: 10px;
     display: block;
+    background-color: white;
 }
 
 .card.flipped {
@@ -76,7 +78,7 @@ button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #e74c3c;
+    background-color: rgb(71, 71, 224);
     color: white;
     border: none;
     cursor: pointer;
@@ -85,5 +87,18 @@ button {
 }
 
 button:hover {
-    background-color: #c0392b;
+    background-color: rgb(111, 111, 239);
+}
+
+.status-bar {
+    display: block;
+    margin-top: 10px;
+}
+
+.status-bar #timer {
+    color: white;
+}
+
+.status-bar #score {
+    color: white;
 }
