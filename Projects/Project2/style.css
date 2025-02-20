@@ -166,3 +166,13 @@ body {
 .status-bar #score {
     color: white;
 }
+
+#restartBtn {
+    border-radius: 50%;
+    border: none;
+}
+
+#restartBtn-img {
+    width: 40px;
+    height: 40px;
+}
