@@ -136,3 +136,10 @@ function restartGame() {
     flippedCards = [];
     fetchMethod(currentGameType);
 }
+
+//Return to back Menu
+function backToOptions() {
+    document.getElementById('home-screen').style.display = 'none';
+    document.getElementById('game-selection').style.display = 'flex';
+    document.getElementById('game-screen').style.display = 'none';
+}

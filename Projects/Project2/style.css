@@ -167,12 +167,18 @@ body {
     color: white;
 }
 
-#restartBtn {
-    border-radius: 50%;
-    border: none;
+.game-Btn {
+    display: inline-block;
+    margin: 10px;
 }
 
-#restartBtn-img {
-    width: 40px;
-    height: 40px;
+#restartBtn {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightseagreen;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    margin: 0 10px;
 }
