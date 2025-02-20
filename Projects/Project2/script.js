@@ -101,9 +101,7 @@ function checkForMatch() {
         if (matchedCards.length === doubleArrayData.length) {
             clearInterval(timer);
             matchWinSound.play();
-            setTimeout(() => {
-                alert(`You won the game in ${60 - timeLeft} seconds! Score: ${score}`);
-            }, 1000);
+            resultCard();
         }
     } else {
         nomatchSound.play();
@@ -125,7 +123,7 @@ function startTimer() {
         document.getElementById('timer').textContent = `Time: ${timeLeft}s`;
         if (timeLeft <= 0) {
             clearInterval(timer);
-            alert('Time is up! Game Over.');
+            resultCard();
             restartGame();
         }
     }, 1000);
@@ -135,6 +133,8 @@ function restartGame() {
     matchedCards = [];
     flippedCards = [];
     fetchMethod(currentGameType);
+    document.getElementById('game-screen').style.display = 'flex';
+    document.getElementById('game-result').style.display = 'none';
 }
 
 //Return to back Menu
@@ -142,4 +142,19 @@ function backToOptions() {
     document.getElementById('home-screen').style.display = 'none';
     document.getElementById('game-selection').style.display = 'flex';
     document.getElementById('game-screen').style.display = 'none';
+    document.getElementById('game-result').style.display = 'none';
+    matchedCards = [];
+    flippedCards = [];
+
+}
+function resultCard() {
+    document.getElementById('home-screen').style.display = 'none';
+    document.getElementById('game-selection').style.display = 'none';
+    document.getElementById('game-screen').style.display = 'none';
+    document.getElementById('game-result').style.display = 'flex';
+    let dataInfo = document.getElementById('result-info');
+    dataInfo.innerHTML = `You won the game in ${60 - timeLeft} seconds! Score: ${score}`;
+}
+function nextGame() {
+
 }

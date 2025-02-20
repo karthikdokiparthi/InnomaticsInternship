@@ -170,6 +170,7 @@ body {
 .game-Btn {
     display: inline-block;
     margin: 10px;
+    cursor: pointer;
 }
 
 #restartBtn {
@@ -181,4 +182,33 @@ body {
     font-size: 15px;
     border: none;
     margin: 0 10px;
+}
+
+.result-card {
+    background-color: #282c34;
+    justify-content: center;
+    display: flex;
+}
+
+.result-conatiner {
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    padding: 20px;
+}
+
+.result-btn {
+    padding: 10px;
+    background-color: rgb(203, 82, 82);
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#result-info {
+    color: black;
+    font-size: 12px;
 }
