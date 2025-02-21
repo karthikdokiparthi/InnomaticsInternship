@@ -124,7 +124,6 @@ function startTimer() {
         if (timeLeft <= 0) {
             clearInterval(timer);
             resultCard();
-            restartGame();
         }
     }, 1000);
 }
@@ -153,7 +152,13 @@ function resultCard() {
     document.getElementById('game-screen').style.display = 'none';
     document.getElementById('game-result').style.display = 'flex';
     let dataInfo = document.getElementById('result-info');
-    dataInfo.innerHTML = `You won the game in ${60 - timeLeft} seconds! Score: ${score}`;
+    if (matchedCards.length === doubleArrayData.length) {
+        dataInfo.innerHTML = `You won the game in ${60 - timeLeft} seconds! Score: ${score}`;
+        document.getElementById('next-btn').style.display = 'inline';
+    } else {
+        dataInfo.innerHTML = `Game Over! Score: ${score}`;
+        document.getElementById('next-btn').style.display = 'none';
+    }
 }
 function nextGame() {
 
