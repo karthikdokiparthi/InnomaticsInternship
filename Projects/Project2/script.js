@@ -30,6 +30,7 @@ function fetchMethod(gameType) {
             doubleArrayData = [...dataArray, ...dataArray];
             let shuffledData = shuffleData(doubleArrayData);
             generateCards(shuffledData);
+            console.log(shuffledData);
             score = 0;
             document.getElementById('score').textContent = `Score: ${score}`;
             startTimer();
@@ -160,6 +161,43 @@ function resultCard() {
         document.getElementById('next-btn').style.display = 'none';
     }
 }
-function nextGame() {
 
+// Next game selection 
+function nextGame() {
+    matchedCards = [];
+    flippedCards = [];
+    document.getElementById('game-selection').style.display = 'none';
+    document.getElementById('game-screen').style.display = 'flex';
+    document.getElementById('game-result').style.display = 'none';
+
+    if (currentGameType === 'avengers.json') {
+        currentGameType = 'pokemons.json';
+        fetchMethod(currentGameType);
+    }
+    else if (currentGameType === 'pokemons.json') {
+        currentGameType = 'benten.json';
+        fetchMethod(currentGameType);
+    }
+    else if (currentGameType === 'benten.json') {
+        currentGameType = 'emojis.json';
+        fetchMethod(currentGameType);
+    }
+    else if (currentGameType === 'emojis.json') {
+        currentGameType = 'fruits.json';
+        fetchMethod(currentGameType);
+    }
+    else if (currentGameType === 'fruits.json') {
+        currentGameType = 'animals.json';
+        fetchMethod(currentGameType);
+    }
+    else if (currentGameType === 'animals.json') {
+        currentGameType = 'indianCricketers.json';
+        fetchMethod(currentGameType);
+    }
+    else if (currentGameType === 'indianCricketers.json') {
+        fetchMethod('flags.json');
+        currentGameType = 'avengers.json';
+    } else {
+        fetchMethod(currentGameType);
+    }
 }
