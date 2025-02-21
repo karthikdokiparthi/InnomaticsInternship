@@ -85,6 +85,7 @@ function flipCard() {
 const matchSound = new Audio('./data/correctSound.mp3');
 const nomatchSound = new Audio('./data/wrongSound.mp3');
 const matchWinSound = new Audio('./data/winSound.wav');
+const matchLossSound = new Audio('./data/GameLoss.mp3');
 
 function checkForMatch() {
     const [card1, card2] = flippedCards;
@@ -124,6 +125,7 @@ function startTimer() {
         document.getElementById('timer').textContent = `Time: ${timeLeft}s`;
         if (timeLeft <= 0) {
             clearInterval(timer);
+            matchLossSound.play();
             resultCard();
         }
     }, 1000);

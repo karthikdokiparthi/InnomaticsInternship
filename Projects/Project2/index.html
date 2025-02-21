@@ -10,7 +10,9 @@
 </head>
 
 <body>
+    <!-- Main Container -->
     <div id="main-container">
+        <!-- Home screen -->
         <div class="container" id="home-screen">
             <div class="title">
                 <span class="word">Memory </span>
@@ -19,7 +21,7 @@
             </div>
             <button class="play-btn" onclick="startGame()"><i class="fa-solid fa-play"></i> Play</button>
         </div>
-
+        <!-- Game Section -->
         <div class="container" id="game-selection" style="display: none;">
             <h1>Select Your Card Theme</h1>
             <div class="game-options">
@@ -56,19 +58,20 @@
                 </div>
             </div>
         </div>
-
+        <!-- Game cards section -->
         <div class="container" id="game-screen" style="display: none;">
             <div class="status-bar">
                 <span id="timer">Time: 60s</span>
                 <span id="score">Score: 0</span>
             </div>
-            <div id="game-board"></div>
+            <div id="game-board"><!-- Javascript content --></div>
             <div class="game-Btn">
                 <button id="restartBtn" onclick="backToOptions()"><i class="fa-solid fa-arrow-left"></i> Back</button>
                 <button id="restartBtn" onclick="restartGame()"><i class="fa-solid fa-rotate-left"></i> Restart</button>
 
             </div>
         </div>
+        <!-- Result  info container -->
         <div class="result-card" id="game-result" style="display: none;">
             <div class="result-container">
                 <p id="result-info"></p>
