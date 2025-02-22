@@ -197,9 +197,10 @@ function nextGame() {
         fetchMethod(currentGameType);
     }
     else if (currentGameType === 'indianCricketers.json') {
-        fetchMethod('flags.json');
+        currentGameType = 'flags.json';
+        fetchMethod(currentGameType);
+    } else if (currentGameType === 'flags.json') {
         currentGameType = 'avengers.json';
-    } else {
         fetchMethod(currentGameType);
     }
 }
