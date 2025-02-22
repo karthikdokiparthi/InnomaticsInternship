@@ -101,9 +101,11 @@ function checkForMatch() {
         document.getElementById('score').textContent = `Score: ${score}`;
 
         if (matchedCards.length === doubleArrayData.length) {
-            clearInterval(timer);
-            matchWinSound.play();
-            resultCard();
+            setTimeout(() => {
+                clearInterval(timer);
+                matchWinSound.play();
+                resultCard();
+            }, 1000);
         }
     } else {
         nomatchSound.play();
