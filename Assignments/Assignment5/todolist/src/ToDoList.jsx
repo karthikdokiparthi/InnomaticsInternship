@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaUpLong, FaDownLong } from "react-icons/fa6";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 function ToDoList() {
     const [task, setTask] = useState(["complete break fast", "go to office", "do your work"]);
@@ -11,7 +13,7 @@ function ToDoList() {
     function addTask() {
         if (newTask.trim() !== "") {
             setTask(t => [...t, newTask])
-            setNewTask = "";
+            setNewTask("");
         }
     }
 
@@ -37,18 +39,24 @@ function ToDoList() {
     }
 
     return (<>
-
-        <input type="text" placeholder="enter task" value={newTask} onChange={handleInputChange} />
-        <button onClick={addTask}>Add</button>
-        <ol>
-            {task.map((element, index) =>
-                <li key={index}>{element}
-                    <button onClick={() => removeTask(index)}>Delete</button>
-                    <button onClick={() => moveUp(index)}>up</button>
-                    <button onClick={() => moveDown(index)}>down</button>
-                </li>
-            )}
-        </ol>
+        <div className="home-container">
+            <div className="header-container">
+                <h1 className="header-text"></h1>
+                <input type="text" placeholder="enter task" value={newTask} onChange={handleInputChange} className="text-container" />
+                <button onClick={addTask} className="btn-add">Add</button>
+            </div>
+            <div className="section-container">
+                <ol>
+                    {task.map((element, index) =>
+                        <li key={index}>{element}
+                            <button onClick={() => moveUp(index)} className="btn-arrow"><FaUpLong /></button>
+                            <button onClick={() => removeTask(index)} className="btn-delete"><RiDeleteBin6Line /></button>
+                            <button onClick={() => moveDown(index)} className="btn-arrow"><FaDownLong /></button>
+                        </li>
+                    )}
+                </ol>
+            </div>
+        </div>
     </>)
 }
 
