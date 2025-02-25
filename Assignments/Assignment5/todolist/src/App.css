@@ -1,42 +1,123 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.home-container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header-container {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-container {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.btn-add {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-.card {
-  padding: 2em;
+.btn-add:hover {
+  background: #0056b3;
 }
 
-.read-the-docs {
-  color: #888;
+.section-container {
+  margin-top: 20px;
+}
+
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  min-height: 60px;
+}
+
+li:hover {
+  background: #e6f2ff;
+}
+
+.task-content {
+  flex: 1;
+  word-break: break-word;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.btn-arrow,
+.btn-delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+.btn-arrow:hover {
+  color: #0056b3;
+}
+
+.btn-delete {
+  color: red;
+}
+
+.btn-delete:hover {
+  color: darkred;
 }

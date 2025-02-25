@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaUpLong, FaDownLong } from "react-icons/fa6";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import './App.css';
 
 function ToDoList() {
     const [task, setTask] = useState(["complete break fast", "go to office", "do your work"]);
@@ -38,26 +39,29 @@ function ToDoList() {
         }
     }
 
-    return (<>
+    return (
         <div className="home-container">
             <div className="header-container">
-                <h1 className="header-text"></h1>
-                <input type="text" placeholder="enter task" value={newTask} onChange={handleInputChange} className="text-container" />
+                <h1 className="header-text">Task Manager</h1>
+                <input type="text" placeholder="Enter task" value={newTask} onChange={handleInputChange} className="text-container" />
                 <button onClick={addTask} className="btn-add">Add</button>
             </div>
             <div className="section-container">
                 <ol>
-                    {task.map((element, index) =>
-                        <li key={index}>{element}
-                            <button onClick={() => moveUp(index)} className="btn-arrow"><FaUpLong /></button>
-                            <button onClick={() => removeTask(index)} className="btn-delete"><RiDeleteBin6Line /></button>
-                            <button onClick={() => moveDown(index)} className="btn-arrow"><FaDownLong /></button>
+                    {task.map((element, index) => (
+                        <li key={index} className="task-item">
+                            <span className="task-content">{element}</span>
+                            <div className="btn-container">
+                                <button onClick={() => moveUp(index)} className="btn-arrow"><FaUpLong /></button>
+                                <button onClick={() => removeTask(index)} className="btn-delete"><RiDeleteBin6Line /></button>
+                                <button onClick={() => moveDown(index)} className="btn-arrow"><FaDownLong /></button>
+                            </div>
                         </li>
-                    )}
+                    ))}
                 </ol>
             </div>
         </div>
-    </>)
+    );
 }
 
 export default ToDoList;
