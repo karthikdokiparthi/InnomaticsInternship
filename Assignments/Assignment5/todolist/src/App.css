@@ -31,10 +31,7 @@ body {
 .header-text {
   font-size: 28px;
   font-weight: 700;
-  color: #333;
-  background: linear-gradient(135deg, #007bff, #00bfff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2a8ef9;
 }
 
 .text-container {
