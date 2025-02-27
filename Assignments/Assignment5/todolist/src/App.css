@@ -121,3 +121,40 @@ li:hover {
 .btn-delete:hover {
   color: darkred;
 }
+
+.btn-edit,
+.btn-save {
+  background: transparent;
+  color: green;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn-edit:hover,
+.btn-save:hover {
+  color: rgb(49, 225, 49);
+}
+
+.edit-input {
+  width: 70%;
+  padding: 8px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn-check {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
