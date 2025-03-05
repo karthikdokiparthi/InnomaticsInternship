@@ -32,6 +32,9 @@ function Navbar() {
                         <a href="#projects" className="navbar-link">Projects</a>
                     </li>
                     <li className="navbar-item">
+                        <a href="#skills" className="navbar-link">Skills</a>
+                    </li>
+                    <li className="navbar-item">
                         <a href="#" className="navbar-link">Experiences</a>
                     </li>
                     <li className="navbar-item">
