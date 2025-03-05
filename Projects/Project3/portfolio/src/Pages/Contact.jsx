@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import Button from './Button';
+import Button from '../Buttons/Button';
 
 const Contact = () => {
     const onSubmit = async (event) => {

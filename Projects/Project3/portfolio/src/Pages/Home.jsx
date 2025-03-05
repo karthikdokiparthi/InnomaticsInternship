@@ -9,9 +9,10 @@ const Home = () => {
     return (
         <div className="home">
             <div className="home-details">
+                <p className='home-intro'>Hello, I'm</p>
                 <h1>Karthik Dokiparthi</h1>
                 <h2>Full Stack Java Developer</h2>
-                <p>Building scalable and efficient web applications with Java and modern technologies.</p>
+                <p>Dedicated to developing high-performance and scalable web applications using Java, Spring Boot, React.js, and PostgreSQL. Skilled in crafting seamless user experiences and optimizing backend efficiency.</p>
                 <div className="cta-buttons">
                     <button className="cta-button">View My Work</button>
                     <button className="cta-button">Contact Me</button>
