@@ -41,6 +41,10 @@
     color: #ddd;
     margin-bottom: 15px;
     animation: fadeIn 1.2s ease-in-out;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .home-details p {
@@ -83,6 +87,20 @@
     align-items: center;
     animation: fadeInRight 1s ease-in-out;
 }
+
+.animated-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .home-image img {
     width: 350px;

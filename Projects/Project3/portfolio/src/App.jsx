@@ -6,6 +6,7 @@ import Projects from './Pages/Projects';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Skills from './Pages/Skills';
+import ProfileDetails from './Pages/ProfileDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <Projects />
       <Skills />
+      <ProfileDetails />
       <About />
       <Contact />
     </>
