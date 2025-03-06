@@ -7,17 +7,19 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Skills from './Pages/Skills';
 import ProfileDetails from './Pages/ProfileDetails';
+import Footer from './Pages/Footer';
 
 function App() {
   return (
     <>
       <Navbar />
       <Home />
-      <Projects />
-      <Skills />
-      <ProfileDetails />
       <About />
+      <Skills />
+      <Projects />
+      <ProfileDetails />
       <Contact />
+      <Footer />
     </>
   )
 }

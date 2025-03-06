@@ -13,6 +13,8 @@ import image7 from "../assets/image7.png";
 import image8 from "../assets/image8.png";
 import image9 from "../assets/image9.png";
 import image10 from "../assets/image10.png";
+import { LuGithub } from "react-icons/lu";
+import { TbWorld } from "react-icons/tb";
 
 const projectsData = [
     {
@@ -181,7 +183,7 @@ function Projects() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        GitHub
+                                        <span className='live-icons'><LuGithub /></span> GitHub
                                     </a>
                                     {project.live_demo !== 'N/A' && (
                                         <a
@@ -190,7 +192,7 @@ function Projects() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            Live Demo
+                                            <span className='live-icons'><TbWorld /></span> Live Demo
                                         </a>
                                     )}
                                 </div>
