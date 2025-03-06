@@ -1,3 +1,37 @@
+#profile {
+    padding: 60px 20px;
+}
+
+.profile-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 40px auto 30px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+
+
+.profile-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.profile-header:hover::after {
+    width: 100%;
+}
+
 .profile-details {
     max-width: 1200px;
     margin: 0 auto;

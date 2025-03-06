@@ -64,50 +64,56 @@ const ProfileDetails = () => {
     ];
 
     return (
-        <div className="profile-details">
+        <div id='profile'>
             <div>
-                <h2>
-                    <span className='icons'><BsBriefcase /></span>
-                    Experience
-                </h2>
-                {experiences.map((exp, index) => (
-                    <div key={index} className="experience-item">
-                        <h3>{exp.company}</h3>
-                        <p className="duration">{exp.duration}</p>
-                        <p className="role">{exp.role}</p>
-                        <ul>
-                            {exp.details.map((detail, i) => (
-                                <li key={i}>{detail}</li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
-            </div>
+                <h1 className="profile-header">Experience & Education</h1>
 
-            <div>
-                <h2><span className='icons'><FaUserGraduate /></span>Education</h2>
-                {educations.map((edu, index) => (
-                    <div key={index} className="education-item">
-                        <h3>{edu.institution}</h3>
-                        <div className="institution-duration">
-                            <p className="institution">{edu.degree}</p>
-                            <p className="duration">{edu.duration}</p>
-                        </div>
+                <div className="profile-details">
+                    <div>
+                        <h2>
+                            <span className='icons'><BsBriefcase /></span>
+                            Experience
+                        </h2>
+                        {experiences.map((exp, index) => (
+                            <div key={index} className="experience-item">
+                                <h3>{exp.company}</h3>
+                                <p className="duration">{exp.duration}</p>
+                                <p className="role">{exp.role}</p>
+                                <ul>
+                                    {exp.details.map((detail, i) => (
+                                        <li key={i}>{detail}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
-                ))}
 
-                <h2><span className='icons'><PiCertificateBold /></span>Certifications</h2>
-                {certifications.map((cert, index) => (
-                    <div key={index} className="certification-item">
-                        <div className="title-platform">
-                            <h3>{cert.title}</h3>
-                            <p className="platform">{cert.platform}</p>
-                        </div>
-                        <p className="date">{cert.date}</p>
-                        {cert.instructor && <p className="instructor">{cert.instructor}</p>}
-                        {cert.duration && <p className="duration">{cert.duration}</p>}
+                    <div>
+                        <h2><span className='icons'><FaUserGraduate /></span>Education</h2>
+                        {educations.map((edu, index) => (
+                            <div key={index} className="education-item">
+                                <h3>{edu.institution}</h3>
+                                <div className="institution-duration">
+                                    <p className="institution">{edu.degree}</p>
+                                    <p className="duration">{edu.duration}</p>
+                                </div>
+                            </div>
+                        ))}
+
+                        <h2><span className='icons'><PiCertificateBold /></span>Certifications</h2>
+                        {certifications.map((cert, index) => (
+                            <div key={index} className="certification-item">
+                                <div className="title-platform">
+                                    <h3>{cert.title}</h3>
+                                    <p className="platform">{cert.platform}</p>
+                                </div>
+                                <p className="date">{cert.date}</p>
+                                {cert.instructor && <p className="instructor">{cert.instructor}</p>}
+                                {cert.duration && <p className="duration">{cert.duration}</p>}
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
             </div>
         </div>
     );
