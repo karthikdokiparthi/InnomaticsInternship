@@ -3,9 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #2c3e50;
+    background: linear-gradient(90deg, #2E1437, #000000);
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-container {
@@ -50,7 +50,7 @@
 }
 
 .navbar-link:hover {
-    color: #e74c3c;
+    color: #FFD700;
     transform: translateY(-2px);
 }
 
@@ -58,6 +58,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.navbar-social a {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-social a:hover {
+    color: #FFD700;
 }
 
 .menu-toggle {
@@ -80,7 +90,7 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #34495e;
+        background: linear-gradient(90deg, #2E1437, #000000);
         flex-direction: column;
         align-items: center;
         gap: 0;
@@ -105,7 +115,6 @@
 
     .navbar-social {
         display: none;
-        /* Hide social buttons in mobile menu */
     }
 
     .menu-toggle {

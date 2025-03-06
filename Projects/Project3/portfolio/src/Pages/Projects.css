@@ -1,6 +1,6 @@
 .projects-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    background: linear-gradient(90deg, #2E1437, #000000);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -13,7 +13,7 @@
     text-align: center;
     margin: 40px auto 30px auto;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     position: relative;
     display: block;
     width: fit-content;
